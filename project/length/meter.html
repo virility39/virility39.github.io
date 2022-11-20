@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter Conversion</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/about.html" class="">About Us</a>
+                <a href="/info.html" class="">Info</a>
+                <a href="/faqs.html" class="">FAQs</a>
+                <a href="/sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/length.html">Length Conversion</a></li>
+            <li>Meter Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+            </div>
+        <div class="submenu">
+            <a href="/length.html" class="sidebar"id="active"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+            <div class="submenu-content">
+                <a href="/length/millimeter.html" class="submenucontent"> Millimeter</a>
+                <a href="/length/centimeter.html" class="submenucontent"> Centimeter</a>
+                <a href="/length/meter.html" class="submenucontent"id="active"> Meter</a>
+                <a href="/length/kilometer.html" class="submenucontent"> Kilometer</a>
+                <a href="/length/inch.html" class="submenucontent"> Inch</a>
+                <a href="/length/foot.html" class="submenucontent"> Foot</a>
+                <a href="/length/yard.html" class="submenucontent"> Yard</a>
+                <a href="/length/mile.html" class="submenucontent"> Mile</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <a href="/mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+        </div>
+        <div class="submenu">
+            <a href="/volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+        </div>
+        <div class="submenu">
+            <a href="/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+        </div>
+    </div>
+
+        <h1>Meter Conversion</h1>
+        <section id="userInput">
+            <table class="body-table">
+                <tbody >
+                    <tr>
+                        <td align="right" class="char">
+                            From:
+                        </td>
+                        <td>
+                            <input type="number" id="input" autofocus oninput="meterConversion()" onchange="meterConversion()">
+                        </td>
+                        <td>
+                            <b class="char">Meter</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="char">
+                            To:
+                        </td>
+                        <td>
+                            <input type="text" id="output" >
+                        </td>
+                        <td>
+                            <select name="" id="to" class="select" oninput="meterConversion()"> 
+                                <option value="Millimeter"> Millimeter</option>
+                                <option value="Centimeter"> Centimeter</option>
+                                <option value="Kilometer"> Kilometer</option>
+                                <option value="Inch"> Inch</option>
+                                <option value="Foot"> Foot</option>
+                                <option value="Yard"> Yard</option>
+                                <option value="Mile"> Mile</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="resultOutput">
+                <span class="result" id="res"></span>
+            </div>
+        </section>
+        
+        <div class="text-content">
+            <h3>Meter</h3>
+            <p><b>Abbreviation/Symbol:</b></p>
+            <ul>
+                <li>m</li>
+            </ul>
+
+            <b>Unit of:</b>
+            <ul>
+                <li>Length</li>
+            </ul>
+
+            <b>Denifition:</b>
+            <p>The meter is a unit of length in the metric system, and is the base unit of length in the International System of Units (SI). As the base unit of length in the SI and other m.k.s. systems (based around meters, kilograms and seconds) the meter is used to help derive other units of measurement such as the newton, for force.</p>
+            <p>1 m is equivalent to around 1.0936 yards, or 39.370 inches. Since 1983, the meter has been officially defined as the length of the path travelled by light in a vacuum during a time interval of 1/299,792,458 of a second.</p>
+            
+            <b>Origin:</b>
+            <p>A decimal-based unit of measurement had been proposed as early as the late 17th century, with the name metre being derived from the Greek métron katholikón, meaning "universal measure".</p>
+
+            <p>An early definition of a meter was "the length of a pendulum with a half-period of one second" By the 18th century a definition based on "one ten-millionth of the length of the Earth's meridian along one quadrant" (the distance from the equator to the North Pole) was gaining favour, and this was the accepted definition when France adopted the metric system in 1795.</p>
+                
+            <p>Prototype metre bars - first brass, later platinum then a platinum/iridium alloy - were manufactured as successive standards of the meter. In 1960   the meter was redefined using the wavelengths of radiation, before the current definition, relating the meter to the speed of light, was adopted in 1983.</p>
+
+            <b>Worldwide Use:</b>
+            <p>The meter, as part of the metric system, is used as a measure of distance across the globe, the primary exception being the United States, where the imperial system is used for most purposes.</p>
+
+            <b>Common references:</b>
+            <ul>
+                <li>A human male of average height is around 1.75 m tall.</li>
+                <li>The hurdles used in Olympic 110 m hurdles races are 1.067 m high.</li>
+                <li>The tallest building in the world (as of 2012), the Burj Khalifa in Dubai, is 828 m tall.</li>
+                <li>The standard gauge of railway tracks (the distance between the rails) is 1.435 m.</li>
+            </ul>
+
+        </div>
+
+        <footer>
+            <a href="/about.html#term">terms of use</a> |
+            <a href="/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+</html>

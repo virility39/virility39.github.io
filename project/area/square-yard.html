@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Yard Conversion</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script>
+
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/about.html" class="">About Us</a>
+                <a href="/info.html" class="">Info</a>
+                <a href="/faqs.html" class="">FAQs</a>
+                <a href="/sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/area.html">Area Conversion</a></li>
+            <li>Square Yard Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/area.html" class="sidebar" id="active"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+                <div class="submenu-content">
+                    <a href="/area/square-millimeter.html" class="submenucontent" > Square Mililiter</a>
+                    <a href="/area/square-centimeter.html" class="submenucontent" >Square Centimeter</a>
+                    <a href="/area/square-meter.html" class="submenucontent">Square Meter</a>
+                    <a href="/area/hectare.html" class="submenucontent">Hectare</a>
+                    <a href="/area/square-inch.html" class="submenucontent">Square Inch</a>
+                    <a href="/area/square-foot.html" class="submenucontent">Square Foot</a>
+                    <a href="/area/square-yard.html" class="submenucontent" id="active">Square Yard</a>
+                    <a href="/area/acre.html" class="submenucontent">Acre</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/length.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+            </div>
+        </div>
+
+        <h1>Square Yard Conversion</h1>
+        <section id="userInput">
+            <table class="body-table">
+                <tbody >
+                    <tr>
+                        <td align="right" class="char">
+                            From:
+                        </td>
+                        <td>
+                            <input type="number" id="input" autofocus oninput="yd2Conversion()" onchange="yd2Conversion()">
+                        </td>
+                        <td>
+                            <b class="char">Square Yard</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="char">
+                            To:
+
+                        </td>
+                        <td>
+                            <input type="text" id="output" >
+                        </td>
+                        <td>
+                            <select name="" id="to" class="select" oninput="yd2Conversion()"> 
+                                <option value="Square Millimeter"> Square Millimeter</option>
+                                <option value="Square Centimeter"> Square Centimeter</option>
+                                <option value="Square Meter"> Square Meter</option>
+                                <option value="Hectare"> Hectare</option>
+                                <option value="Square Inch"> Square Inch</option>
+                                <option value="Square Foot"> Square Foot</option>
+                                <option value="Acre"> Acre</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="resultOutput">
+                <span class="result" id="res"></span>
+            </div>
+        </section>
+        
+        <div class="text-content">
+            <h3>Square Yard</h3>
+            <b>Unit of:</b>
+            <ul>
+                <li>Area</li>
+            </ul>
+
+            <b>Denifition</b>
+            <p>
+                <ul>
+                <li>0.5 fathom (1 fathom equals 2 yards)</li>
+                <li>3 feet (1 foot equals a third of a yard)</li>
+                <li>36 inch
+                <li>0.9144 meters (1 meter is about 1.0936 international yards)</li>
+                </ul>
+            </p>
+            <p>Yard was formerly divided in binary into two, four, eight, and sixteen sections called half-yards, spans, fingers, and nails. . Two yards is a fathom (strut).</p>
+            <p> The yard (symbol: yd) is an English unit of length in both the British imperial and US customary systems of measurement equalling 3 feet or 36 inches.
+                 Since 1959 it has been by international agreement standardized as exactly 0.9144 meter. A distance of 1,760 yards is equal to 1 mile.</p>
+            <b>Origin:</b>
+            <p>The origin of the yard measure is uncertain. Both the Romans and the Welsh used multiples of a shorter foot, but 2+1⁄2 Roman feet was a "step" (Latin: gradus) and 3 Welsh feet was a "pace" (Welsh: cam). 
+                The Proto-Germanic cubit or arm's-length has been reconstructed as *alinâ, which developed into the Old English ęln, Middle English elne, and modern ell of 1.25 yd (1.14 m). This has led some to derive the yard of three English feet from pacing; others from the ell or cubit; and still others from Henry I's arm standard (see below). 
+                Based on the etymology of the other "yard", some suggest it originally derived from the girth of a person's waist, while others believe it originated as a cubic measure.[citation needed] One official British report writes:
+            </p>
+            <p> The standard of measure has always been taken either from some part of the human body, such as a foot, the length of the arm, the span of the hand, or from other natural objects, such as a barleycorn, or other kind of grain. But the yard was the original standard adopted by the early English sovereigns, and has been supposed to be founded upon the breadth of the chest of the Saxon race. 
+                The yard continued till the reign of Henry VII., 
+                when the ell was introduced, that being a yard and a quarter, or 45 inches. The ell was borrowed from the Paris drapers. Subsequently, however, Queen Elizabeth re-introduced the yard as the English standard of measure.</p>
+        </div>
+
+        <footer>
+            <a href="/about.html#term">terms of use</a> |
+            <a href="/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+</html>

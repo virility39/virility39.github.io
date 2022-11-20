@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilogram Conversion</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script> 
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/about.html" class="">About Us</a>
+                <a href="/info.html" class="">Info</a>
+                <a href="/faqs.html" class="">FAQs</a>
+                <a href="/sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="?index.html">Home</a></li>
+            <li><a href="/mass.html">Mass Conversion</a></li>
+            <li>Kilogram Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/length.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/mass.html" class="sidebar" id="active"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+                <div class="submenu-content">
+                    <a href="/mass/gram.html" class="submenucontent">Gram</a>
+                    <a href="/mass/kilogram.html" class="submenucontent" id="active">Kilogram</a>
+                    <a href="/mass/metricton.html" class="submenucontent">Metric Ton</a>
+                    <a href="/mass/ounce.html" class="submenucontent">Ounce</a>
+                    <a href="/mass/pound.html" class="submenucontent">Pound</a>
+                    <a href="/mass/shortton.html" class="submenucontent">Short Ton</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+                <div class="submenu-content">
+                    
+                </div>
+            </div>
+        </div>
+
+        <h1 class="convert">Kilogram Conversion</h1>
+        <section id="userInput">
+            <table class="body-table">
+                <tbody >
+                    <tr>
+                        <td align="right" class="char">
+                            From:
+                        </td>
+                        <td>
+                            <input type="number" id="input" autofocus oninput="kgConversion()" onchange="kgConversion()">
+                        </td>
+                        <td>
+                            <b class="char">Kilogram</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="char">
+                            To:
+                        </td>
+                        <td>
+                            <input type="text" id="output" readonly>
+                        </td>
+                        <td>
+                            <select name="" id="to" class="select-mass" oninput="kgConversion()"> 
+                                <option value="Gram"> Gram</option>
+                                <option value="Metric Ton"> Metric Ton</option>
+                                <option value="Ounce"> Ounce</option>
+                                <option value="Pound"> Pound</option>
+                                <option value="Short Ton"> Short Ton</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="resultOutput">
+                <span class="result" id="res"></span>
+            </div>
+        </section>
+        
+        <div class="text-content">
+            <h3>Kilogram</h3>
+            <b>Abbreviation/Symbol:</b>
+                <ul>
+                    <li>kg</li>
+                    <li>kilo (informal)</li>
+                </ul>
+
+            <b>Unit of:</b>
+                <ul>
+                    <li>Mass</li>
+                </ul>
+
+            <b>Denifition:</b>
+                <p>A kilogram (symbol: kg) is the base unit of mass in the International System of Units (SI). It is currently defined based on the fixed numerical value of the Planck constant, h, which is equal to 6.62607015 x 10-34 in the units of J·s, or kg·m2·s-1. The meter and the second are defined in terms of c, the speed of light, and cesium frequency, ΔνCs. </p>
+                <p>Even though the definition of the kilogram was changed in 2019, the actual size of the unit remained the same. The changes were intended to improve the definitions of SI base units, not to actually change how the units are used throughout the world.</p>
+            </ul>
+
+            <b>Origin:</b>
+                <p>The name kilogram was derived from the French "kilogramme," which in turn came from adding Greek terminology meaning "a thousand," before the Late Latin term "gramma" meaning "a small weight."</p>
+
+                <p>Unlike the other SI base units, the kilogram is the only SI base unit with an SI prefix. SI is a system based on the meter-kilogram-second system of units rather than a centimeter-gram-second system. 
+                This is at least in part due to the inconsistencies and lack of coherence that can arise through use of centimeter-gram-second systems, such as those between the systems of electrostatic and electromagnetic units.</p>
+                
+                <p>The kilogram was originally defined as the mass of one liter of water at its freezing point in 1794, but was eventually re-defined, since measuring the mass of a volume of water was imprecise and cumbersome.</p>
+                
+                <p></p>A new definition of the kilogram was introduced in 2019 based on Planck's constant and changes to the definition of the second. Prior to the current definition, the kilogram was defined as being equal to the mass of a physical prototype, a cylinder made of a platinum-iridium alloy, which was an imperfect measure. This is evidenced by the fact that the mass of the original prototype for the kilogram now weighs 50 micrograms less than other copies of the standard kilogram.</p>
+
+            <b>Common references:</b>
+                <ul>
+                    <li>A kilogram is the approximate weight of a one liter bottle of water.
+                    </li>
+                    <li>Sugar is commonly sold in 1kg measures.
+                    </li>
+                    <li>A typical basketball weighs approximately 1kg.
+                    </li>
+                </ul>
+        </div>
+
+        <footer>
+            <a href="/about.html#term">terms of use</a> |
+            <a href="/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+
+</html>

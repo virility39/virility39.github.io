@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celcius Conversion</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/about.html" class="">About Us</a>
+                <a href="/info.html" class="">Info</a>
+                <a href="/faqs.html" class="">FAQs</a>
+                <a href="/sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/temperature.html">Temperature Conversion</a></li>
+            <li>Celcius Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/temperature.html" class="sidebar" id="active"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+                <div class="submenu-content">
+                    <a href="/temperature/celcius.html" class="submenucontent" id="active">Celcius</a>
+                    <a href="/temperature/fahrenheit.html" class="submenucontent">Fahrenheit</a>
+                    <a href="/temperature/kelvin.html" class="submenucontent">Kelvin</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/length.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+            </div>
+        </div>
+
+        <h1 class="convert">Celcius Conversion</h1>
+        <section id="userInput">
+            <table class="body-table">
+                <tbody >
+                    <tr>
+                        <td align="right" class="char">
+                            From:
+                        </td>
+                        <td>
+                            <input type="number" id="inputcelcius" autofocus oninput="celciusConversion()" onchange="celciusConversion()">
+                        </td>
+                        <td>
+                            <b class="char">Celcius</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="char">
+                            To:
+                        </td>
+                        <td>
+                            <input type="number" id="outputcelcius" readonly>
+                        </td>
+                        <td>
+                            <select name="" id="tocelcius" class="select-temp" oninput="celciusConversion()"> 
+                                <option value="Fahrenheit"> Fahrenheit</option>
+                                <option value="kelvin"> kelvin</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td class="res" id="res" colspan="3"> </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="resultOutput">
+                <span class="result" id="res"></span>
+            </div>
+        </section>
+        
+        <div class="text-content">
+            <h3>Celsius</h3>
+            <p><b>Abbreviation/Symbol:</b></p>
+            <ul>
+                <li>°C</li>
+                <li>Centigrade</li>
+                <li>deg C</li>
+                <li>degree C</li>
+            </ul>
+            <p><b>Unit of:</b></p>
+            <ul>
+                <li>Temperature</li>
+            </ul>
+            <p><b>Worldwide use:</b></p>
+            <ul>
+                <li>The Celsius scale, already widely used in Europe, replaced the |Fahrenheit| scale in most countries
+                    during the mid-to-late 20th century, although Fahrenheit remains the official scale of the United
+                    States, Cayman Islands and Belize. </li>
+            </ul>
+            <p><b>Definition:</b></p>
+            <p>Although initially defined by the freezing point of water (and later the melting point of ice), the
+                Celsius scale is now officially a derived scale, defined in relation to the |Kelvin temperature scale|
+            </p>
+            <p>Zero on the Celsius scale (0°C) is now defined as the equivalent to 273.15K, with a temperature
+                difference of 1 deg C equivalent to a difference of 1K, meaning the unit size in each scale is the same.
+                This means that 100°C, previously defined as the boiling point of water, is now defined as the
+                equivalent to 373.15K.</p>
+            <p>The Celsius scale is an interval system but not a ratio system, meaning it follows a relative scale but
+                not an absolute scale. This can be seen because the temperature interval between 20°C and 30°C is the
+                same as between 30°C and 40°C, but 40°C does not have twice the air heat energy of 20°C.</p>
+            <p>A temperature difference of 1 deg C is the equivalent of a temperature difference 1.8°F.</p>
+            <p><b>Origin:</b></p>
+            <p>The Celsius scale is named after the Swedish astronomer Anders Celsius (1701-1744). In 1742, Celsius
+                created a temperature scale wherein 0 degrees was the boiling point of water and 100 degrees the
+                freezing point.</p>
+            <p>Around this time other physicists independently developed a similar scale but reversed, such that 0
+                degrees was the melting point of ice and 100 degrees the boiling point of water. This new ‘forward’
+                scale was widely adopted across continental Europe, generally being referred to as the |centigrade
+                scale|.</p>
+            <p>The scale was officially named as ‘The Celsius scale’ in 1948 to prevent confusion with the use of
+                centigrade as an angular measurement.</p>
+            <p><b>Common references:</b></p>
+            <ul>
+                <li>Absolute Zero, -273.15°C</li>
+                <li>Melting point of ice, 0°C (actually -0.0001°C)</li>
+                <li>Warm summer's day in a temperate climate, 22°C</li>
+                <li>Normal human body temperature, 37°C</li>
+                <li>Boiling point of water at 1 atmosphere, 99.9839°C</li>
+            </ul>
+        </div>
+
+        <footer>
+            <a href="/about.html#term">terms of use</a> |
+            <a href="/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+</html>

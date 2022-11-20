@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inch Conversion</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/about.html" class="">About Us</a>
+                <a href="/info.html" class="">Info</a>
+                <a href="/faqs.html" class="">FAQs</a>
+                <a href="/sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/length.html">Length Conversion</a></li>
+            <li>Inch Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+            </div>
+        <div class="submenu">
+            <a href="/length.html" class="sidebar"id="active"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+            <div class="submenu-content">
+                <a href="/length/millimeter.html" class="submenucontent"> Millimeter</a>
+                <a href="/length/centimeter.html" class="submenucontent">Centimeter</a>
+                <a href="/length/meter.html" class="submenucontent">Meter</a>
+                <a href="/length/kilometer.html" class="submenucontent">Kilometer</a>
+                <a href="/length/inch.html" class="submenucontent"id="active"> Inch</a>
+                <a href="/length/foot.html" class="submenucontent"> Foot</a>
+                <a href="/length/yard.html" class="submenucontent"> Yard</a>
+                <a href="/length/mile.html" class="submenucontent">Mile</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <a href="/mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+        </div>
+        <div class="submenu">
+            <a href="/volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+        </div>
+        <div class="submenu">
+            <a href="/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+        </div>
+    </div>
+
+        <h1>Inch Conversion</h1>
+        <section id="userInput">
+            <table class="body-table">
+                <tbody >
+                    <tr>
+                        <td align="right" class="char">
+                            From:
+                        </td>
+                        <td>
+                            <input type="number" id="input" autofocus oninput="inConversion()" onchange="inConversion()">
+                        </td>
+                        <td>
+                            <b class="char">Inch </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="char">
+                            To:
+
+                        </td>
+                        <td>
+                            <input type="text" id="output" >
+                        </td>
+                        <td>
+                            <select name="" id="to" class="select" oninput="inConversion()"> 
+                                <option value="Millimeter"> Millimeter</option>
+                                <option value="Centimeter"> Centimeter</option>
+                                <option value="Meter"> Meter</option>
+                                <option value="Kilometer"> Kilometer</option>
+                                <option value="Foot"> Foot</option>
+                                <option value="Yard"> Yard</option>
+                                <option value="Mile"> Mile</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="resultOutput">
+                <span class="result" id="res"></span>
+            </div>
+        </section>
+        
+        <div class="text-content">
+            <h3>Inch</h3>
+            <p><b>Abbreviation/Symbol:</b></p>
+            <ul>
+                <li>in</li>
+            </ul>
+
+            <b>Unit of:</b>
+            <ul>
+                <li>Length</li>
+            </ul>
+
+            <b>Denifition:</b>
+            <p>An inch (symbol: in) is a unit of length in the imperial and US customary systems of measurement. An inch was defined to be equivalent to exactly 25.4 millimeters in 1959. There are 12 inches in a foot and 36 inches in a yard.</p>
+            <b>Origin:</b>
+            <p>The term "inch" was derived from the Latin unit "uncia" which equated to "one-twelfth" of a Roman foot.</p>
+
+            <p>There have been a number of different standards for the inch in the past, with the current definition being based on the international yard. One of the earliest definitions of the inch was based on barleycorns, where an inch was equal to the length of three grains of dry, round barley placed end-to-end. Another version of the inch is also believed to have been derived from the width of a human thumb, where the length was obtained from averaging the width of three thumbs: a small, a medium, and a large one.</p>
+            <p>Use of the inch can be traced back as far as the 7th century. The first explicit definition we could find of its length was after 1066 when it was defined as the length of three barleycorns. This was not a satisfactory reference as barleycorn lengths vary naturally. The British Standards Institute defined the inch as 25.4mm in 1930 in the document "Metric Units in Engineering: Going SI". In March 1932 the American Standards Association were asked to rule on whether to adopt the same value (at the time the American inch was 1/.03937 mm which approximated to 25.400051 mm). Because the values were so close, and because Britain has already settled on that value, the ASA adopted this value on March 13, 1933.</p>
+            
+            <b>Worldwide Use:</b>
+            <p> The inch is mostly used in the United States, Canada, and the United Kingdom. It is also sometimes used in Japan (as well as other countries) in relation to electronic parts, like the size of display screens.</p>
+        </div>
+
+        <footer>
+            <a href="/about.html#term">terms of use</a> |
+            <a href="/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Ounce Conversion</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/about.html" class="">About Us</a>
+                <a href="/info.html" class="">Info</a>
+                <a href="/faqs.html" class="">FAQs</a>
+                <a href="/sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/volume.html">Volume</a></li>
+            <li>Fluid Ounce Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+            </div>
+        <div class="submenu">
+            <a href="/length.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+        </div>
+        <div class="submenu">
+            <a href="/mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+        </div>
+        <div class="submenu">
+            <a href="/volume.html" class="sidebar"id="active"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+            <div class="submenu-content">
+                <a href="/volume/milliliter.html" class="submenucontent">Milliliter</a>
+                <a href="/volume/liter.html" class="submenucontent">Liter</a>
+                <a href="/volume/cubicmeter.html" class="submenucontent">Cubic Meter</a>
+                <a href="/volume/fluid-ounce.html" class="submenucontent"id="active">Fluid Ounce</a>
+                <a href="/volume/gallon.html" class="submenucontent">Gallon</a>
+                <a href="/volume/cubicfoot.html" class="submenucontent">Cubic Foot</a>
+                <a href="/volume/cubicyard.html" class="submenucontent">Cubic Yard</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <a href="/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+            <div class="submenu-content">
+            </div>
+        </div>
+    </div>
+
+        <h1>Fluid Ounce Conversion</h1>
+        <section id="userInput">
+            <table class="body-table">
+                <tbody >
+                    <tr>
+                        <td align="right" class="char">
+                            From:
+                        </td>
+                        <td>
+                            <input type="number" id="input" autofocus oninput="flozConversion()" onchange="flozConversion()">
+                        </td>
+                        <td>
+                            <b class="char">Fluid Ounce</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="char">
+                            To:
+
+                        </td>
+                        <td>
+                            <input type="text" id="output" readonly>
+                        </td>
+                        <td>
+                            <select name="" id="to" class="select-mass" oninput="flozConversion()"> 
+                                <option value="Milliliter"> Milliliter</option>
+                                <option value="Liter"> Liter</option>
+                                <option value="Cubic Meter"> Cubic Meter</option>
+                                <option value="Cubic Foot"> Cubic Foot</option>
+                                <option value="Cubic Yard"> Cubic Yard</option>
+                                <option value="Gallon"> Gallon</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="resultOutput">
+                <span class="result" id="res"></span>
+            </div>
+        </section>
+        
+        <div class="text-content">
+            <h3>Fluid Ounce</h3>
+            <p></p>
+            <p><b>Abbreviation/Symbol:</b></p>
+            <ul>
+                <li>fl oz</li>
+            </ul>
+            <p><b>Unit of:</b></p>
+            <ul>
+                <li>Volume</li>
+            </ul>
+            <p><b>Worldwide use:</b></p>
+            <ul>
+                <li>As the name indicates, the fluid ounce is typically used as a measurement of liquid volume. It is mostly used in the United States and the United Kingdom, as one of the many measurements of volume used.</li>
+            </ul>
+
+            <p><b>Definition:</b></p>
+            <p> A fluid ounce (symbol: fl oz) is a unit of volume in the imperial and United States customary systems of measurement. The US fluid ounce is 1/16 of a US fluid pint, and 1/128 of a US liquid gallon, which is equal to 29.57 mL. The imperial fluid ounce is 1/20 of an imperial pint, and 1/160 of an imperial gallon, which is equal to 28.4 mL.</p>
+
+            <p><b>Origin:</b></p>
+            <p>The fluid ounce was originally based on the volume occupied by one ounce (weight) of a given liquid such as wine or water, thus varying based on the system being used. In 1824, the imperial gallon was defined as the volume of ten pounds of water at a temperature of 16.7°C. The imperial gallon's definition was later changed to be equal to 4.54609 liters, making the imperial fluid ounce equal to exactly 28.4130625 mL.</p>
+            <p>The United States fluid ounce was initially based on the wine gallon used in England prior to 1824. After the adoption of the international inch in 1959, the US fluid ounce became equal to exactly 29.5735295625 mL.</p>
+        </div>
+        <footer>
+            <a href="/about.html#term">terms of use</a> |
+            <a href="/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+</html>

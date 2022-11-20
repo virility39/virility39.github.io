@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yard Conversion</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/about.html" class="">About Us</a>
+                <a href="/info.html" class="">Info</a>
+                <a href="/faqs.html" class="">FAQs</a>
+                <a href="/sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/length.html">Length Conversion</a></li>
+            <li>Yard Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/length.html" class="sidebar"id="active"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+                <div class="submenu-content">
+                    <a href="/length/millimeter.html" class="submenucontent"> Millimeter</a>
+                    <a href="/length/centimeter.html" class="submenucontent">Centimeter</a>
+                    <a href="/length/meter.html" class="submenucontent">Meter</a>
+                    <a href="/length/kilometer.html" class="submenucontent">Kilometer</a>
+                    <a href="/length/inch.html" class="submenucontent"> Inch</a>
+                    <a href="/length/foot.html" class="submenucontent"> Foot</a>
+                    <a href="/length/yard.html" class="submenucontent" id="active"> Yard</a>
+                    <a href="/length/mile.html" class="submenucontent">Mile</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+            </div>
+        </div>
+
+        <h1>Yard Conversion</h1>
+        <section id="userInput">
+            <table class="body-table">
+                <tbody >
+                    <tr>
+                        <td align="right" class="char">
+                            From:
+                        </td>
+                        <td>
+                            <input type="number" id="input" autofocus oninput="ydConversion()" onchange="ydConversion()">
+                        </td>
+                        <td>
+                            <b class="char">Yard </b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="char">
+                            To:
+                        </td>
+                        <td>
+                            <input type="text" id="output" >
+                        </td>
+                        <td>
+                            <select name="" id="to" class="select" oninput="ydConversion()">
+                                <option value="Millimeter"> Millimeter</option>
+                                <option value="Centimeter"> Centimeter</option>
+                                <option value="Meter"> Meter</option>
+                                <option value="Kilometer"> Kilometer</option>
+                                <option value="Inch"> Inch</option>
+                                <option value="Foot"> Foot</option>
+                                <option value="Mile"> Mile</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="resultOutput">
+                <span class="result" id="res"></span>
+            </div>
+        </section>
+        
+        <div class="text-content">
+            <h3>Yard</h3>
+            <b>Abbreviation/Symbol:</b>>
+            <ul>
+                <li> yd</li>
+            </ul>
+
+            <b>Unit of:</b>
+            <ul>
+                <li>Length</li>
+            </ul>
+
+            <b>Denifition:</b>
+            <p>A yard (symbol: yd) is a unit of length in both the imperial and US customary systems of measurement. Since 1959, a yard has been defined as exactly 0.9144 meters. It is also equal to 3 feet, or 36 inches.</p>
+
+            <b>Origin:</b>
+            <p>The origin of the yard as a unit is unclear. It is an English unit (predecessor of imperial units) and the term was derived from "gerd" in Old English, the earliest historical form of the English language. Some suggest that the yard could have been derived based on the girth of a person's waist.</p>
+
+            <b>Worldwide Use:</b>
+            <p>The yard is commonly used in field-length measurement for certain sports such as American and Canadian football, and association football (soccer). The yard is also used in cricket pitch dimensions, and sometimes in golf fairway measurements. In the United Kingdom (UK) as well as the United States, the yard is frequently used when referring to distance. In the UK, it is also a legal requirement that road signs indicating shorter distances are displayed in yards.</p>
+        </div>
+
+        <footer>
+            <a href="/about.html#term">terms of use</a> |
+            <a href="/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+</html>

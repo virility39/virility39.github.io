@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallon Conversion</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/index.html"><img src="/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/about.html" class="">About Us</a>
+                <a href="/info.html" class="">Info</a>
+                <a href="/faqs.html" class="">FAQs</a>
+                <a href="/sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/volume.html">Volume</a></li>
+            <li>Gallon Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="/area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+            </div>
+        <div class="submenu">
+            <a href="/length.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+        </div>
+        <div class="submenu">
+            <a href="/mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+        </div>
+        <div class="submenu">
+            <a href="/volume.html" class="sidebar"id="active"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+            <div class="submenu-content">
+                <a href="/volume/milliliter.html" class="submenucontent">Milliliter</a>
+                <a href="/volume/liter.html" class="submenucontent">Liter</a>
+                <a href="/volume/cubicmeter.html" class="submenucontent">Cubic Meter</a>
+                <a href="/volume/fluid-ounce.html" class="submenucontent">Fluid Ounce</a>
+                <a href="/volume/gallon.html" class="submenucontent"id="active">Gallon</a>
+                <a href="/volume/cubicfoot.html" class="submenucontent">Cubic Foot</a>
+                <a href="/volume/cubicyard.html" class="submenucontent">Cubic Yard</a>
+            </div>
+        </div>
+        <div class="submenu">
+            <a href="/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+            <div class="submenu-content">
+            </div>
+        </div>
+    </div>
+
+        <h1>Gallon Conversion</h1>
+        <section id="userInput">
+            <table class="body-table">
+                <tbody >
+                    <tr>
+                        <td align="right" class="char">
+                            From:
+                        </td>
+                        <td>
+                            <input type="number" id="input" autofocus oninput="galConversion()" onchange="galConversion()">
+                        </td>
+                        <td>
+                            <b class="char">Gallon</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right" class="char">
+                            To:
+                        </td>
+                        <td>
+                            <input type="text" id="output" >
+                        </td>
+                        <td>
+                            <select name="" id="to" class="select" oninput="galConversion()"> 
+                                <option value="Milliliter"> Milliliter</option>
+                                <option value="Liter"> Liter</option>
+                                <option value="Cubic Meter"> Cubic Meter</option>
+                                <option value="Fluid Ounce"> Fluid Ounce</option>
+                                <option value="Cubic Foot"> Cubic Foot</option>
+                                <option value="Cubic Yard"> Cubic Yard</option>
+                            </select>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="resultOutput">
+                <span class="result" id="res"></span>
+            </div>
+        </section>
+        
+        <div class="text-content">
+            <h3>Gallon</h3>
+            <p></p>
+            <p><b>Abbreviation/Symbol:</b></p>
+            <ul>
+                <li> Gal </li>
+            </ul>
+            <p><b>Unit of:</b></p>
+            <ul>
+                <li>Volume</li>
+            </ul>
+            <p><b>Worldwide use:</b></p>
+            <ul>
+                <li> In the United States (US), gallons are often used for larger containers, such as half gallon tubs of ice cream or one-gallon cartons of milk. Gallons are also widely used in fuel economy expression in the US, as well as some of its territories. The imperial gallon is used even more sparingly than the US gallon, with most countries around the world using liters when referencing fuel.</li>
+            </ul>
+            <p><b>Definition:</b></p>
+            <p>A gallon is a unit of volume specifically regarding liquid capacity in both the US customary and imperial systems of measurement. The US gallon is defined as 231 cubic inches (3.785 liters). In contrast, the imperial gallon, which is used in the United Kingdom, Canada, and some Caribbean nations, is defined as 4.54609 liters. In both systems, the gallon is divided into four quarts. Quarts are then divided into two pints and pints are divided into two cups. A cup is comprised of two gills, making one gallon equal four quarts, eight pints, sixteen cups, or thirty-two gills. Further differentiating the US and the imperial gallon, a US gill is divided into four fluid ounces, while an imperial gallon is divided into five. A US fluid ounce is therefore 1/128 of a US gallon while an imperial fluid ounce is 1/160 of an imperial gallon.
+            </p>
+            <p><b>Origin:</b></p>
+            <p>The term gallon most closely originates from "galon" in Old Northern French and developed as a system for measuring wine and beer in England, resulting in measures such as the wine gallon, ale gallon, and imperial gallon.</p>
+        </div>
+        <footer>
+            <a href="/about.html#term">terms of use</a> |
+            <a href="/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+</html>

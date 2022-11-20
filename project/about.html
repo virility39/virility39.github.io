@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        input:required:valid, input:valid{
+            border: solid black;
+            color: seagreen;
+        }
+        input:invalid{
+            color: red;
+        }
+    </style>
+</head>
+
+<body> 
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="index.html"><img src="image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="index.html">METRIC <br> CONVERSION</a></div> 
+            <div class="menu">
+                <a href="about.html" class="active">About Us</a>
+                <a href="info.html" class="">Info</a>
+                <a href="faqs.html" class="">FAQs</a>
+                <a href="sitemap.html" class="">Sitemap</a>         
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>About Us</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+            </div>
+            <div class="submenu">
+                <a href="length.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+            </div>
+            <div class="submenu">
+                <a href="mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+            </div>
+            <div class="submenu">
+                <a href="volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+            </div>
+            <div class="submenu">
+                <a href="currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+            </div>
+        </div>
+
+        <h1>About Us</h1>
+        <div class="text-content">
+            <p>We are a group of IT trainees enthusiastic in creating quality free tools and content on the internet. The main purpose of this website is to provide a comprehensive collection of free online unit converters for the ease of public use. This site was launched in 2022. The entire content and tools of this site were developed in-house.</p>
+
+            <h2 class="contact">Contact Us</h2>
+                <p>We can be reached via the following form. Normally, we will respond within 3 business days. However, please do not try to reach us on advertisement optimization, header bidding, etc.</p>
+                <form action="">
+                    <table class="contact">
+                        <tr>
+                            <td><b>Your name:</b></td>
+                            <td><input id="name" type="text" value size="50" style="width:350px; padding:5px" autofocus required pattern="[a-z]{2,30}"></td>  
+                        </tr>
+                        <tr>
+                            <td><b>Your email:</b></td>
+                            <td><input id="email" type="email" value size="50" style="width:350px; padding:5px" required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$"></td>  
+                        </tr>
+                        <tr>
+                            <td><b>Message to us:</b></td>
+                            <td><textarea id="message" name="message" cols="40" rows="8" style="width:352px; padding:5px"></textarea></td>  
+                        </tr> 
+                        <tr>
+                            <td></td>
+                            <td><button id="btn1" style="width:100%; font-size:18px; font-weight:bold; padding:5px; color:rgb(9, 159, 240)">Send</button></td>  
+                        </tr>
+                    </table>
+                </form>
+
+            <h2 id="policy">Privacy Policy</h2>
+            <div>
+                <p>This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
+                <p>If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
+                
+                <h3>Information Collection and Use</h3> 
+                    <p>We take and respect your privacy seriously. We may collect information via cookie or web log. This is to customize services and enhance customer satisfaction.</p>
+                    <p>The data we collect are:</p>
+                
+                <h3>Log Data</h3>
+                    <p>We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.</p>
+                
+                <h3>Cookies and Third Party Advertising</h3>
+                    <p>Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer's hard drive.</p>
+                    <p>Our website uses these "cookies" to collection information and to improve our Service. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.</p>
+                    <p>We allow third-party companies to serve ads and/or collect certain anonymous information when you visit our web site. These companies may use non-personally identifiable information (e.g., click stream information, browser type, time and date, subject of advertisements clicked or scrolled over) during your visits to this and other Web sites in order to provide advertisements about goods and services likely to be of greater interest to you. These companies typically use a cookie or third party web beacon to collect this information. To learn more about this behavioral advertising practice or to opt-out of this type of advertising, you can visit <span style="word-wrap: break-word;">optout.networkadvertising.org</span></p>
+                
+                <h3>Web Forms on Our Site</h3>
+                    <p>The information you fill and submit by the web forms on our sites, to enable the unit converters to function.</p>
+                
+                <h3>Security</h3>
+                    <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+                
+                <h3>Links to Other Sites</h3>
+                    <p>Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
+                
+                <h3>Children's Privacy</h3>
+                    <p>Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
+                
+                <h3>Changes to This Privacy Policy</h3>
+                    <p>We reserve the right to update this privacy policy with or without notice. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page.</p>
+            </div>
+
+            <h2 id="term">Terms of Use</h2>
+            <div>
+                <h3>Acceptance of Terms</h3>
+                    <p>We provides this website for use by consumers and businesses. By using the Website in any way, you are agreeing to comply with the Terms of Use. Should you object to any term or condition of the Terms of Use or any guideline of the Website, your only recourse is to immediately discontinue use of the Website.</p>
+                    
+                    <h3>Changes to the Terms of Use</h3>
+                    <p>We reserve the right, at our sole discretion, to change, modify, or alter the Terms of Use at any time. Such changes shall become effective immediately upon the posting thereof. The most current version of the Terms of Use will be linked from the footer of the Website. You must review the Terms of Use on a regular basis to keep yourself apprised of any changes.</p>
+                
+                <h3>Conduct</h3>
+                    <p>You agree not to post any text, files, images, video, audio, or other materials ("Content") or use the Website in any way that:</p>
+                    <ul>
+                        <li>infringes any patent, trademark, trade secret, copyright, or other proprietary rights of any party;</li>
+                        <li>violates any state, federal, or other law;</li>
+                        <li>threatens, harasses, or is libelous;</li>
+                        <li>is harmful to minors;</li>
+                        <li>contains self-benefiting advertising or marketing in public areas of the Website that have not been paid for and are not designated for the addition of promotional content;</li>
+                        <li>produces Software viruses or code harmful to other computers;</li>
+                        <li>disrupts the normal dialogue of users of the Website;</li>
+                        <li>employs misleading or false information;</li>
+                        <li>uses forged headers or other items to manipulate identifiers in order to disguise the origin of Content.</li>
+                    </ul>
+                    <p>You agree not to decompile or reverse engineer or otherwise attempt to discover any source code contained in the Website.</p>
+                    <p>Unless you receive explicit permission, you agree not to reproduce, duplicate, copy, sell, resell, or exploit for any commercial purposes, any aspect of the Website. Any business that registers with a listing or purchases advertising or any other service ("Customer") has the right and permission to manage their listing or purchased advertising or other service to their commercial benefit so long as the codes of conduct above are not violated.</p>
+                
+                <h3>Privacy</h3>
+                    <p>Please review our Privacy Policy for details on the Company's collection, disclosure, and use of personally identifiable information and privacy matters. Use of the Website is based on your agreement to the Privacy Policy and Terms of Use.</p>
+                    
+                <h3>Content</h3>
+                    <p>This Website and some of the Content on this Website contain links to other resources on the Internet. Such links are provided as aids to assist you in identifying and locating other Internet resources that may be of interest to you, and are not intended to state or imply that Company sponsors, endorses, are affiliated or associated with, or are legally authorized to use any trade name, registered trademark, logo, legal or official seal, or copyrighted symbol that may be reflected in said links.</p>
+                    <p>Information or conversion results at our Website may be outdated due to the date and the method of the collection or may be incorrect. If you find information or conversion results on the Website that you believe to be in error, please contact us with the specifics and we will investigate the matter and where we are allowed by our data source we will update the information.</p>
+                    
+                <h3>Limitations and Termination</h3>
+                    <p>We may create limitations of your use of the Website including, but not limited to, the number of times you may access the Website. Limitations can include full termination of your access to the Website and you agree that we has the right at any time, in its sole discretion, with or without notice, to modify or discontinue the Website (or any part thereof).</p>
+                    
+                <h3>Disclaimer of Warranties</h3>
+                    <p>THE WEBSITE AND ANY INCLUDED SERVICES ARE PROVIDED ON AN "AS IS" BASIS, WITHOUT ANY WARRANTIES OF ANY KIND, INCLUDING WITHOUT LIMITATION THE WARRANTIES THAT IT IS FREE OF DEFECTS, ERRORS, VIRUSES, MERCHANTABLE AND THAT IT IS FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. YOUR USE OF THE WEBSITE IS AT YOUR OWN RISK.</p>
+                    
+                <h3>Limitations of Liability</h3>
+                    <p>UNDER NO CIRCUMSTANCES SHALL WE BE LIABLE FOR DIRECT, INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES, RESULTING FROM ANY ASPECT OF YOUR USE OF THE WEBSITE INCLUDING BUT NOT LIMITED TO DAMAGES THAT ARISE FROM YOUR INABILITY TO USE THE WEBSITE OR THE SERVICE, OR THE INTERRUPTION, MODIFICATION, OR TERMINATION OF THE WEBSITE OR ANY SERVICE OR PART THEREOF.</p>
+                    
+                <h3>Partial Invalidity</h3>
+                    <p>Any provision of this Terms of Use which is found to be invalid or unenforceable by any court in any jurisdiction shall not affect the validity or enforceability of the provision in other jurisdictions and shall not affect the validity or enforceability of the remaining provisions. The waiver or failure of Company to exercise in any respect any right provided for in this Terms of Use shall not be deemed a waiver of any further right under this Agreement.</p>
+                    
+                    <h3>Violation of Terms</h3>
+                    <p>You agree that monetary damages may not be a sufficient remedy for any breach of this Agreement and that Company shall be entitled, without waiving any other rights or remedies, to seek injunctive or equitable relief as may be deemed proper by a court of competent jurisdiction.</p>
+                    
+                    <h3>General</h3>
+                    <p>The Terms of Use constitute the entire agreement between you and Company and govern your use of the Website, superseding any prior agreements between you and Company.</p>
+            </div>
+        </div>
+        
+        <footer>
+            <a href="about.html#term">terms of use</a> |
+            <a href="about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $("#btn1").on("click",{"msg":"You have successfully entered"}, function(event){
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if (name == '')
+            {
+                alert('You must enter your Name');
+                return false;
+            }
+            if (email == '')
+            {
+                alert('You must enter your Email');
+                return false;
+            }
+            if (message == '')
+            {
+                alert('You must enter your Message');
+                return false;
+            }
+                alert("" + event.data.msg);
+        })
+    </script>
+</body>
+</html>

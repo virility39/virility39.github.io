@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Conversion</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="index.html"><img src="image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="about.html" class="">About Us</a>
+                <a href="info.html" class="">Info</a>
+                <a href="faqs.html" class="">FAQs</a>
+                <a href="sitemap.html" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Area Conversion</li>
+        </ul>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+            </div>
+            <div class="submenu">
+                <a href="area.html" class="sidebar" id="active"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+                <div class="submenu-content">
+                    <a href="/area/square-millimeter.html" class="submenucontent">Square Millimeter</a>
+                    <a href="/area/square-centimeter.html" class="submenucontent">Square Centimeter</a>
+                    <a href="/area/square-meter.html" class="submenucontent">Square Meter</a>
+                    <a href="/area/hectare.html" class="submenucontent">Hectare</a>
+                    <a href="/area/square-inch.html" class="submenucontent">Square Inch</a>
+                    <a href="/area/square-foot.html" class="submenucontent">Square Foot</a>
+                    <a href="/area/square-yard.html" class="submenucontent">Square Yard</a>
+                    <a href="/area/acre.html" class="submenucontent">Acre</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="length.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+            </div>
+            <div class="submenu">
+                <a href="mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+            </div>
+            <div class="submenu">
+                <a href="volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+            </div>
+            <div class="submenu">
+                <a href="currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+            </div>
+        </div>
+
+        <div class="calculator-parent">
+            <h1>Area Conversion</h1>
+            <div class="parent">
+                <div class="parent-left">
+                    <h3>From:</h3>
+                    <input type="number" id="input" placeholder="Insert value" oninput="areaConverter()" onchange="areaConverter()"> <br>
+                    <select name="" id="from" size="6" style="width: 228px;" oninput="areaConverter()">
+                        <option value="Square Millimeter" selected>Square Millimeter [mm^2]</option>
+                        <option value="Square Centimeter">Square Centimeter [cm^2]</option>
+                        <option value="Square Meter">Square Meter [m^2]</option>
+                        <option value="Hectare">Hectare [ha]</option>
+                        <option value="Square Inch">Square Inch [in^2]</option>
+                        <option value="Square Foot">Square Foot [ft^2]</option>
+                        <option value="Square Yard">Square Yard [yd^2]</option>
+                        <option value="Acre">Acre [ac]</option>
+                    </select>
+                </div>
+                <div class="parent-right">
+                    <h3>To:</h3>
+                    <input type="number" id="output" placeholder="Result" readonly>
+                    <select name="" id="to" size="6" style="width: 228px;" oninput="areaConverter()">
+                        <option value="Square Millimeter">Square Millimeter [mm^2]</option>
+                        <option value="Square Centimeter" selected>Square Centimeter [cm^2]</option>
+                        <option value="Square Meter">Square Meter [m^2]</option>
+                        <option value="Hectare">Hectare [ha]</option>
+                        <option value="Square Inch">Square Inch [in^2]</option>
+                        <option value="Square Foot">Square Foot [ft^2]</option>
+                        <option value="Square Yard">Square Yard [yd^2]</option>
+                        <option value="Acre">Acre [ac]</option>
+                    </select>
+                </div>
+                <br>
+                
+                <div class="middle">
+                    <button id="exchange" onclick="exchange()">
+                        <i class="fas fa-exchange-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <h3>Popular area unit conversions</h3>
+        <table id="toother">
+            <tr>
+                <td><a href="/area/square-millimeter.html">Square Milliliter Conversion</a></td>
+                <td><a href="/area/square-centimeter.html">Square Centimeter Conversion</a></td>
+            </tr>
+            <tr>
+                <td><a href="/area/square-meter.html">Square Meter Conversion</a></td>
+                <td><a href="/area/hectare.html">Hectare Conversion</a></td>
+            </tr>
+            <tr>
+                <td><a href="/area/square-foot.html">Square Inch Conversion</a></td>
+                <td><a href="/area/square-foot.html">Square Foot ton Conversion</a></td>
+            </tr>
+            <tr>
+
+            </tr>
+                <td><a href="/area/square-yard.html">Square Yard Conversion</a></td>
+                <td><a href="/area/acre.html">Acre Conversion</a></td>
+            </tr>
+        </table>
+
+        <h3>Complete list of area units for conversion</h3> 
+        <ul class="allunits">
+            <li>square meter [m^2]</li>
+            <li>1 square kilometer [km^2] = 1000000 square meter [m^2]</li>
+            <li>1 square hectometer [hm^2] = 10000 square meter [m^2]</li>
+            <li>1 square centimeter [mm^2] = 1.0e-4 square meter [m^2]</li>
+            <li>1 square millimeter [mm^2] = 1.0e-6 square meter [m^2]</li>
+            <li>1 hectare [ha] = 10000 square meter [m^2]</li>
+            <li>1 square mile [mi^2] = 2589988.110336 square meter [m^2]</li>
+            <li>1 square yard [yd^2] = 0.83612736 square meter [m^2]</li>
+            <li>1 square inch [in^2] = 0.00064516 square meter [m^2]</li>
+            <li>1 acre [ac] = 4046.8564224 square meter [m^2]</li>
+        </ul>
+
+        <footer>
+            <a href="about.html#term">terms of use</a> |
+            <a href="about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+</body>
+</html>
